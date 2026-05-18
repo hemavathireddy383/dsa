@@ -1,0 +1,17 @@
+marks = [35, 42, 50, 61, 78, 85, 90]
+target = 78
+
+low, high = 0, len(marks) - 1
+steps = 0
+
+while low <= high:
+    steps += 1
+    mid = (low + high) // 2
+
+    if marks[mid] == target:
+        print("Marks found at index", mid, ", Steps taken:", steps)
+        break
+    elif marks[mid] < target:
+        low = mid + 1
+    else:
+        high = mid - 1
