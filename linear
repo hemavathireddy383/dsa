@@ -1,0 +1,11 @@
+products = ['Rice', 'Sugar', 'Milk', 'Oil', 'Soap']
+target = 'Milk'
+
+for item in products:
+    if item == target:
+        print("Product found")
+        break
+
+
+
+        
